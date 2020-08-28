@@ -1,4 +1,5 @@
 # https://www.codechef.com/viewsolution/35855472
+
 for _ in range(int(input())):
     c_score = 0
     m_score = 0

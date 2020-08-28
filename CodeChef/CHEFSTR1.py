@@ -1,4 +1,5 @@
 # https://www.codechef.com/viewsolution/35848974
+
 for i in range(int(input())):
     n, s = int(input()), list(map(int, input().split()))
     tot = 0

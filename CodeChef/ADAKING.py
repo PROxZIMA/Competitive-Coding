@@ -1,4 +1,5 @@
 # https://www.codechef.com/viewsolution/35871836
+
 s = ''
 for i in range(int(input())):
     n = int(input())
