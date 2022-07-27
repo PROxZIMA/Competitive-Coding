@@ -1,0 +1,6 @@
+SELECT
+  round(MIN(LAT_N), 4)
+FROM
+  STATION
+WHERE
+  LAT_N > 38.788;
