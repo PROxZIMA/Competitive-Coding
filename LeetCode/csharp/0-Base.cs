@@ -4,8 +4,9 @@ namespace SDE_Sheet;
 
 public class P0
 {
-    private static void Solution(int[] nums)
+    private static int Solution(int[] nums)
     {
+        return 1;
     }
 
     public class TestData : IEnumerable<object[]>
@@ -15,13 +16,13 @@ public class P0
             yield return new object[]
             {
             new int[] { 2,3,1,3,3 },
-            new int[] { 2,3,1,3,3 }
+            1
             };
 
             yield return new object[]
             {
             new int[] { 1,1 },
-            new int[] { 1,1 }
+            1
             };
         }
 
@@ -30,9 +31,8 @@ public class P0
 
     [Theory]
     [ClassData(typeof(TestData))]
-    public void Test1(int[] nums, int[] expected)
+    public void Test1(int[] nums, int expected)
     {
-        Solution(nums);
-        Assert.Equal(expected, nums);
+        Assert.Equal(expected, Solution(nums));
     }
 }
