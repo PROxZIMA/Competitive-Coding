@@ -6,17 +6,16 @@ public class P53
 {
     public int MaxSubArray(int[] nums)
     {
-        var n = nums.Length;
-        if (n == 1) return nums[0];
+        var result = nums[0];
+        var currMaximum = nums[0];
 
-        var max = int.MinValue;
-        var currentTotal = 0;
-        foreach (var num in nums)
+        for (int i = 1; i < nums.Length; i++)
         {
-            currentTotal = Math.Max(num, currentTotal + num);
-            max = Math.Max(max, currentTotal);
+            currMaximum = Math.Max(nums[i], currMaximum + nums[i]);
+            result = Math.Max(result, currMaximum);
         }
-        return max;
+
+        return result;
     }
 
     public class TestData : IEnumerable<object[]>

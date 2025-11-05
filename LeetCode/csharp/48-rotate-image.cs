@@ -32,10 +32,11 @@ public class P48
                 (matrix[newLocations[0][0]][newLocations[0][1]],
                 matrix[newLocations[3][0]][newLocations[3][1]],
                 matrix[newLocations[2][0]][newLocations[2][1]],
-                matrix[newLocations[1][0]][newLocations[1][1]]) = (matrix[newLocations[3][0]][newLocations[3][1]],
-                                                                    matrix[newLocations[2][0]][newLocations[2][1]],
-                                                                    matrix[newLocations[1][0]][newLocations[1][1]],
-                                                                    matrix[newLocations[0][0]][newLocations[0][1]]);
+                matrix[newLocations[1][0]][newLocations[1][1]]) =
+                (matrix[newLocations[3][0]][newLocations[3][1]],
+                 matrix[newLocations[2][0]][newLocations[2][1]],
+                 matrix[newLocations[1][0]][newLocations[1][1]],
+                 matrix[newLocations[0][0]][newLocations[0][1]]);
             }
 
             locations =
